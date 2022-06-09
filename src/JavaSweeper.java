@@ -5,6 +5,7 @@ import java.awt.*;
 import sweeper.Box;
 
 public class JavaSweeper extends JFrame{
+
     private JPanel panel;
     private final int COLS = 15;
     private final int ROWS =  1;
@@ -13,15 +14,14 @@ public class JavaSweeper extends JFrame{
 
     public static void main(String[] args) {
         new JavaSweeper().setVisible(true);
-
     }
 
     private JavaSweeper(){
-
         setImages();
         initPanel();
         initFrame();
     }
+
 
     private void initPanel(){
         panel = new JPanel(){
@@ -33,6 +33,7 @@ public class JavaSweeper extends JFrame{
 
             }
         };
+
         panel.setPreferredSize(new Dimension(COLS * IMAGE_SIZE,ROWS * IMAGE_SIZE));
         add(panel);
     }
