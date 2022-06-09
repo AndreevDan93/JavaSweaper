@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaSweeper:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2720928-499f-4257-8cdc-7468ee335b72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaSweeper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/bombed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/closed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/flaged.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/inform.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/nobomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/num8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/opened.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/img/zero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JavaSweeper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweeper/Box.java" afterDir="false" />
+    <list default="true" id="a2720928-499f-4257-8cdc-7468ee335b72" name="Changes" comment="+icon">
+      <change afterPath="$PROJECT_DIR$/res/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaSweeper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,26 +39,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="JavaSweeper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaSweeper" />
       <module name="JavaSweeper" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="JavaSweeper" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="JavaSweeper" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="+icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="+icon" />
   </component>
 </project>

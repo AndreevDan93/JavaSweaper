@@ -45,6 +45,7 @@ public class JavaSweeper extends JFrame{
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
+        setIconImage(getImage("icon"));
     }
 
     private void setImages(){
