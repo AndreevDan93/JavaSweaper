@@ -2,13 +2,17 @@ import sweeper.Box;
 
 import javax.swing.*;
 import java.awt.*;
-import sweeper.Box;
 
-public class JavaSweeper extends JFrame{
+import sweeper.Coord;
+import sweeper.Game;
+import sweeper.Ranges;
 
+public class JavaSweeper extends JFrame {
+
+    private Game game;
     private JPanel panel;
-    private final int COLS = 15;
-    private final int ROWS =  1;
+    private final int COLS = 9;
+    private final int ROWS = 9;
     private final int IMAGE_SIZE = 50;
 
 
@@ -16,29 +20,37 @@ public class JavaSweeper extends JFrame{
         new JavaSweeper().setVisible(true);
     }
 
-    private JavaSweeper(){
+    private JavaSweeper() {
+        game = new Game(COLS,ROWS);
+        game.start();
         setImages();
         initPanel();
         initFrame();
     }
 
 
-    private void initPanel(){
-        panel = new JPanel(){
+    private void initPanel() {
+        panel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                for (Box box: Box.values())
-                g.drawImage((Image) box.image,box.ordinal()*IMAGE_SIZE,0,this);
+                for (Coord coord: Ranges.getAllCoords()) {
 
+                    g.drawImage((Image) game.getBox(coord).image,
+                            coord.x * IMAGE_SIZE,
+                            coord.y * IMAGE_SIZE,
+                            this);
+                }
             }
         };
 
-        panel.setPreferredSize(new Dimension(COLS * IMAGE_SIZE,ROWS * IMAGE_SIZE));
+        panel.setPreferredSize(new Dimension(
+                Ranges.getSize().x * IMAGE_SIZE,
+                Ranges.getSize().y * IMAGE_SIZE));
         add(panel);
     }
 
-    private void initFrame (){
+    private void initFrame() {
         pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("SWEEPER");
@@ -46,13 +58,14 @@ public class JavaSweeper extends JFrame{
         setResizable(false);
         setVisible(true);
         setIconImage(getImage("icon"));
+
     }
 
-    private void setImages(){
-        for(Box box: Box.values()) box.image = getImage(box.name());
+    private void setImages() {
+        for (Box box : Box.values()) box.image = getImage(box.name());
     }
 
-    private Image getImage(String name){
+    private Image getImage(String name) {
         String fileName = "img/" + name.toLowerCase() + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(fileName));
         return icon.getImage();
